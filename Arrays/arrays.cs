@@ -2,7 +2,7 @@
 using System;
 class DeclareArraysSample
 {
-    public static void Main()
+    static void f()
     {
         // Single-dimensional array
         int[] numbers = new int[5];
@@ -24,5 +24,10 @@ class DeclareArraysSample
         {
             Console.WriteLine("Length of row {0} is {1}", i, scores[i].Length);
         }
+    }
+
+    public static void Main()
+    {
+        f();
     }
 }
