@@ -26,8 +26,17 @@ class DeclareArraysSample
         }
     }
 
+    static void g(int[] a)
+    {
+        foreach(int i in a)
+            Console.Write("{0} ", i);
+    }
+
     public static void Main()
     {
         f();
+
+        int[] a = { 1, 2, 3, 4, 5 };
+        g(a);
     }
 }
